@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>레이아웃03</title>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Nanum+Pen+Script|Noto+Sans+KR|Sunflower:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <style>
+    #con { clear:both; width: 100%; }
+    .tit, .ck_item { display:none;    }    
+    .page { position:relative; clear:both; width: 100vw; height: 100vh; }    
+    .page:after { content:""; display:table; }    
+    .ecdebb { background:#ecdebb;}    
+    .deeppink { background:deeppink;  }    
+    .deepskyblue { background:deepskyblue;  }
+    .gold { background:gold;  } 
+    .page aside { width:50%; height:100%; position:relative; }    
+    .page .left {  float:left; }    
+    .page .right { float:right; } 
+    #hd { width:220px; height:100vh; overflow:hidden; position:fixed; right:-220px; top:0; z-index:900; transition:0.5s; background:rgba(11,11,11,0.85); }   
+    .logo { display:block; padding:20px; margin-top:120px; } 
+    #gnb li { clear:both; line-height: 64px; }    
+    #gnb li a { display:block; line-height: 64px; font-family: 'Sunflower', sans-serif; padding-left: 24px; font-size:20px; color:#fff; }    
+    #ck1:checked ~ #hd { right:0; } 
+    .lst_btn { display:block; width: 60px; height: 60px; position:fixed; right:80px;  top:40px; z-index:910; border:1px solid darkblue; cursor:pointer;  }    
+    .line_box { position:relative; width:60px; height:60px; }    
+    .lst_btn span { display:block; width:28px; height:3px; background-color:darkblue; position:absolute; left:16px; transition:0.4s; }
+    .lst_btn span#l1 { top: 18px; }
+    .lst_btn span#l2 { top: 28px; }    
+    .lst_btn span#l3 { bottom: 18px; }     
+    #ck1:checked ~ .lst_btn { border-color:#fff; }    
+    #ck1:checked ~ .lst_btn span { background:#fff; }  
+    #ck1:checked ~ .lst_btn span#l1 { transform:rotate(45deg); top:29px; }  
+    #ck1:checked ~ .lst_btn span#l2 { opacity:0; }  
+    #ck1:checked ~ .lst_btn span#l3 { transform:rotate(-45deg); bottom:28px; }  
+        
+    #ft { position:fixed; top: 0; left: 0; z-index:900; width: 72px; border-right:1px solid #eee; 
+        height: 100vh; background-color:rgba(255,255,255,0.85); color:#333; }
+    .copyright { writing-mode: vertical-lr; text-align:center; 
+        vertical-align:center; padding: 16px; font-size:16px; transform:rotate(180deg); }    
+    </style>    
+</head>
+<body>
+<main id="con">
+    <section class="page" id="page1">
+        <h2 class="tit">첫 페이지</h2>
+        <aside class="left ecdebb"></aside>
+        <aside class="right"></aside>
+    </section>
+    <section class="page" id="page2">
+        <h2 class="tit">두 번째 페이지</h2>
+        <aside class="left"></aside>
+        <aside class="right deeppink"></aside>
+    </section>
+    <section class="page" id="page3">
+        <h2 class="tit">세 번째 페이지</h2>
+        <aside class="left gold"></aside>
+        <aside class="right"></aside>
+    </section>
+    <section class="page" id="page4">
+        <h2 class="tit">네 번째 페이지</h2>
+        <aside class="left"></aside>
+        <aside class="right deepskyblue"></aside>
+    </section>
+</main>
+<input type="checkbox" class="ck_item" id="ck1">
+<label for="ck1" class="lst_btn">
+    <div class="line_box">
+        <span class="line" id="l1"></span>
+        <span class="line" id="l2"></span>
+        <span class="line" id="l3"></span>
+    </div>       
+</label>
+<header id="hd">
+    <a href="" class="logo">
+        <img src="https://placehold.it/180x90/ccc" alt="">
+    </a>
+    <nav id="gnb">
+        <ul>
+            <li><a href="">메뉴1</a></li>
+            <li><a href="">메뉴2</a></li>
+            <li><a href="">메뉴3</a></li>
+            <li><a href="">메뉴4</a></li>
+            <li><a href="">메뉴5</a></li>
+            <li><a href="">메뉴6</a></li>
+        </ul>
+    </nav>
+</header>
+<footer id="ft">
+    <p class="copyright">All Copyright by kim reserved.</p>
+</footer>
+</body>
+</html>
