@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="title" content="알뜰폰 모바일 웹앱">
+    <meta name="keywords" content="U+, 알뜰폰, 유플러스, 모바일, 유알모">
+    <meta name="auther" content="LG">
+    <meta name="description" content="알뜰폰 구입이 수월하고, 가격은 저렴, 서비스는 최대, 가성비 갑">
+    <!-- 카카오톡, 블로그 등의 크롤링으로 화면 미리보기 노출 -->
+    <meta property="og:type" content="Website"><!-- 웹,앱 인지 지정-->
+    <meta property="og:title" content="알뜰폰 모바일 웹앱"><!-- 해당 링크의 제목 -->
+    <meta property="og:url" content="./index.html"><!-- URL링크-->
+    <meta property="og:description" content="알뜰폰 구입이 수월하고, 가격은 저렴, 서비스는 최대, 가성비 갑"><!-- 설명, 제목 아래에 설명글-->
+    <meta property="og:img" content="http://아이디.dothome.co.kr/m1/img/vs1.jpg"><!-- 썸네일이미지 . http://부터 시작하는 절대주소로 남겨야 함 -->
+ 
+    <title>알뜰폰 모바일 사이트</title>
+    <link rel="shortcut icon" href="./img/favicon.png">
+    <link rel="apple-touch-icon" href="./img/favicon.png">
+     <link rel="stylesheet" href="https://github.com/necolas/normalize.css/">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="common.css">
+   
+    <style>
+        body,html{width: 100%;height: 100%;overflow: auto;  
+        }
+        /* hd,ft영역은 common.css로 이동*/
+        .hd{position: fixed;top: 0;height: 50px;z-index: 80;}
+        .ft{position: fixed;bottom: 0;left: 0;z-index: 80;}
+        .page_title{clear: both;text-align: center;line-height: 3;padding-top: 50px;}
+        .frm2{clear: both;padding-bottom: 150px;}
+        .frm2 fieldset {border: 0;}
+        .in_frm{display: block;clear: both;width: 280px;margin: 15px auto;line-height: 2;font-size: 1em;color: #222;border: 1px solid #222; border-radius: 30px;}
+        .frm2 .in_frm{text-indent: 1em;color: #222;}
+        .frm_btn_frame{width: 240px;margin: 20px auto;padding: 0;}
+        .btn_frm{display: block;float: left;width: 100px;line-height: 32px;text-align: center;margin: 10px;background: #222;color: #fff;border-radius: 20px;}
+        .frm_btn_frame .btn_frm:nth-of-type(2){float: right;}
+    </style>
+    <script  src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="main.js"></script>
+
+</head>
+<body>
+    <div class="wrap">
+        <header class="hd">
+            <a href="index.html" class="logo" title="logo"></a>
+            <input type="checkbox" class="ck_item" id="ck1">
+            <input type="checkbox" class="ck_item" id="ck2">
+            <nav class="top_btn">
+                <ul>
+                    <li class="search"><label for="ck1">검색</label></li>
+                    <li class="menu"><label for="ck2">메뉴</label></li>
+                </ul>
+            </nav>
+           <!--nav.find_nav>form+p+ul+label
+             nav.find_nav>form.frm1+p.hash_title+(ul.hash>li.item$*5>a)+label.close-->
+             <nav id="find_nav">
+                 <form action="" class="frm1">
+                     <input type="text" name="seacch" placeholder="검색어 입력" id="keyword" class="in_data">
+                     <input type="submit" value="검색" class="frm_btn">
+                 </form>
+                 <p class="hash_title">아래 자주 사용하는 메뉴 링크를 이용하세요</p>
+                 <ul class="hash">
+                     <li class="item1"><a href="sub1.html">#알뜰폰</a></li>
+                     <li class="item2"><a href="sub2.html">#기기변경</a></li>
+                     <li class="item3"><a href="sub3.html">#요금제</a></li>
+                     <li class="item4"><a href="sub4.html">#LG폰</a></li>
+                     <li class="item5"><a href="sub5.html">#V40</a></li>
+                 </ul>
+                 <label for="ck1" class="close"></label>
+             </nav>
+             <nav id="gnb">
+                <ul class="nav">
+                     <li class="item1">
+                        <a href="sub1.html#vs" class="dp1">서브메뉴1</a>
+                        <ul class="sub">
+                            <li class="it1"><a href="sub1.html#page1">서브메뉴11</a></li>
+                            <li class="it2"><a href="sub1.html#page2">서브메뉴12</a></li>
+                            <li class="it3"><a href="sub1.html#page3">서브메뉴13</a></li>
+                            <li class="it4"><a href="sub1.html#page4">서브메뉴14</a></li>
+                            <li class="it5"><a href="sub1.html#page5">서브메뉴15</a></li>
+                        </ul>
+                    </li>
+                    <li class="item2">
+                        <a href="sub1.html#page2" class="dp1">서브메뉴2</a>
+                        <ul class="sub">
+                            <li class="it1"><a href="">서브메뉴21</a></li>
+                            <li class="it2"><a href="">서브메뉴22</a></li>
+                            <li class="it3"><a href="">서브메뉴23</a></li>
+                            <li class="it4"><a href="">서브메뉴24</a></li>
+                            <li class="it5"><a href="">서브메뉴25</a></li>
+                        </ul>
+                    </li>
+                    <li class="item3">
+                        <a href="sub1.html#page3" class="dp1">서브메뉴3</a>
+                        <ul class="sub">
+                            <li class="it1"><a href="">서브메뉴31</a></li>
+                            <li class="it2"><a href="">서브메뉴32</a></li>
+                            <li class="it3"><a href="">서브메뉴33</a></li>
+                            <li class="it4"><a href="">서브메뉴34</a></li>
+                            <li class="it5"><a href="">서브메뉴35</a></li>
+                        </ul>
+                    </li>
+                    <li class="item4">
+                        <a href="sub1.html#page4" class="dp1">서브메뉴4</a>
+                        <ul class="sub">
+                            <li class="it1"><a href="">서브메뉴41</a></li>
+                            <li class="it2"><a href="">서브메뉴42</a></li>
+                            <li class="it3"><a href="">서브메뉴43</a></li>
+                            <li class="it4"><a href="">서브메뉴44</a></li>
+                            <li class="it5"><a href="">서브메뉴45</a></li>
+                        </ul>
+                    </li>
+                    <li class="item5">
+                        <a href="search.html" class="dp1">검색</a>
+                        <ul class="sub">
+                            <li class="it1"><a href="">서브메뉴51</a></li>
+                            <li class="it2"><a href="">서브메뉴52</a></li>
+                            <li class="it3"><a href="">서브메뉴53</a></li>
+                            <li class="it4"><a href="">서브메뉴54</a></li>
+                            <li class="it5"><a href="">서브메뉴55</a></li>
+                        </ul>
+                    </li>
+                    <li class="item6">
+                        <a href="join.html" class="dp1">회원가입</a>
+                        <ul class="sub">
+                            <li class="it1"><a href="">서브메뉴61</a></li>
+                            <li class="it2"><a href="">서브메뉴62</a></li>
+                            <li class="it3"><a href="">서브메뉴63</a></li>
+                            <li class="it4"><a href="">서브메뉴64</a></li>
+                            <li class="it5"><a href="">서브메뉴65</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <label for="ck2" class="close"></label>
+            </nav>
+        </header>
+             <!--figure.vs>div.sub_img>img
+             div.page#page$*5>h3.cate_title+p.cate.com+img.cate_img-->
+        <h2 class="page_title">회원가입</h2>     
+            <form action="" method="post" class="frm2">
+                <fieldset>
+                     <input type="text" id="m_id" class="in_frm" name="m_id" placeholder="아이디 입력">
+                     <input type="password" id="m_pw" class="in_frm" name="m_pw" placeholder="암호 입력">
+                     <input type="password" id="m_pw2" class="in_frm" name="m_pw2" placeholder="암호 확인">
+                     <input type="text" id="m_name" class="in_frm" name="m_name" placeholder="이름 입력">
+                     <input type="email" id="m_email" class="in_frm" name="m_email" placeholder="이메일입력">
+                     <input type="file" id="m_pic" class="in_frm" name="m_pic" placeholder="사진 첨부">
+                    <input type="date" id="m_birth" class="in_frm box" name="m_birth" placeholder="생년월일">
+                </fieldset>
+                <fieldset class="frm_btn_frame" >
+                    <input type="submit" class="btn_frm" value="회원가입">
+                    <input type="reset" class="btn_frm" value="취소">
+                </fieldset>
+            </form>
+       
+        <footer class="ft">
+            <div class="ft_wrap">
+                <p class="copyright">
+                   (주)미디어로그 주소 : 서울특별시 마포구 월드컵북로 416 (상암동) LG 유플러스 <br>
+                   대표이사 : 이용재 &nbsp;&nbsp; 사업자 등록번호 : 114-81-96221<br>
+                   사업자정보 확인&nbsp;&nbsp;통신판매신고 제 2012-서울마포-0954호 
+                </p>
+                <address class="copy">COPYRIGHT &copy; MEDIALOG CORP. ALL RIGHTS RESERVED.</address>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+
+
+
+
+
+

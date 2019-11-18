@@ -1,0 +1,95 @@
+@charset "utf-8";
+* { margin: 0; padding: 0; }
+body, html { width:100%; -ms-overflow-style:none; 
+       font-family: 'Noto Sans KR', sans-serif; }
+::-webkit-scrollbar { display:none; }
+/*  스크롤은 유지한 채 스크롤바만 깔끔하게 안보임*/
+ul { list-style:none; }
+a { text-decoration:none; }
+label, button, input { background-image:none; background-color:transparent; border:0; outline:0; }
+
+/* 헤더영역 */
+.wrap{width: 100%;height: 100%; }
+.hd{width: 100%;height: 40%;
+background: #ff2d76; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #ff2d76 0%, #f69465 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #ff2d76 0%,#f69465 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #ff2d76 0%,#f69465 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff2d76', endColorstr='#f69465',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */}
+.logo{display: block;width: 156px;height: 25px;float: left;margin-left: 10px;margin-top: 10px;
+    background-image:url(img/mobile_logo_w.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+}
+.top_btn{float: right;margin-top: 10px;margin-right: 10px;}
+.top_btn li{float: left;}
+.top_btn li label{display: block;width: 25px;height: 25px;background-repeat: no-repeat;background-position: center center;text-indent: -9999px;}
+.top_btn li.search label{background-image: url(img/search_btn.png);}
+.top_btn li.menu label{background-image: url(img/lst_btn.png);width:32px;   }
+.close{display: block;width: 28px;height: 28px;background-image: url(img/btn_close_b.png);background-size: cover;}
+/* 검색아이콘 클릭시 나타나는 검색 영역*/
+#find_nav{position: fixed;left: -110%;top: 0;z-index: 99;width: 100%;height: 100vh;background: #fff;transition: 0.5s;}
+/*  검색창을 화면 왼쪽 밖에 대기했다가 검색버튼(label=input) 클릭하면(checked)  화면 안으로 애니메이션되면서 보여라(left: 0;)*/
+#ck1:checked ~ #find_nav{left: 0;}
+#gnb{position:fixed; right:-110%; top: 0; z-index:99; padding-top:20px; 
+width: 100%; height: 100vh; background-color:#fff; transition:0.5s;}
+#ck2:checked ~ #gnb{right: 0;}
+
+/*#find_nav*/
+.frm1{clear: both;padding-top: 1.6em;width: 250px;margin: 0 auto;}
+.frm1 input{float: left;display: block;} 
+.in_data{width: 200px;line-height: 30px; border: 1px solid rgb(105,104,104);text-indent: 1em;border-radius: 20px;}
+.frm_btn{width: 32px;height: 32px;background-color: #333;background-image: url(img/search_btn.png);background-repeat: no-repeat;background-position: center center;text-indent: -9999px;border-radius: 20px;margin-left: 10px;}
+.hash_title{clear: both;text-align: center;line-height: 4;}
+.hash{clear: both;padding: 20px;}
+.hash li{line-height: 2.4;}
+.hash li a{color: #333;}
+#find_nav .close{float: right;margin-top: 20px;margin-right: 20px;}
+
+/* #gnb 토글 메뉴*/
+#gnb li{clear: both;line-height: 2;padding-left: 25px;}
+#gnb li a{display: block;color: #333;position: relative;}
+.sub{width: 100%;height: 0px;overflow: hidden;transition: 0.5s;}
+.sub.on{height: 125px;}
+#gnb li a.dp1:after{content: "▼";position: absolute;right: 50px;top: 5px;}
+#gnb li a.dp1.on:after{content: "▲";}
+#gnb:before{content: "MENU";display: block;clear: both;width: 100%;line-height: 80px;font-size: 2em;text-align: center; border-bottom: 3px solid #eee;}
+#gnb .close{position: absolute;right: 20px;top: 20px;}
+
+
+.ck_item{display: none;}/*체크박스버튼 안보이게 */
+
+/*푸터영역 */
+.ft{clear: both;width: 100%;height: 100px;background: #333;color: #fff;font-size: 0.7em;text-align: center;line-height: 1.4;padding-top: 10px;padding-bottom: 10px;font-weight: 200;}
+.ft_wrap{width: 280px;margin: 0 auto;}
+.copy{font-style: normal;margin-top: 10px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
